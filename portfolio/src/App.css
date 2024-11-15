@@ -1,0 +1,196 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #00171F;
+  color: #fff;
+}
+
+/* Navigation */
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #00171F;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  transition: transform 0.3s ease;
+  z-index: 1000;
+}
+
+.nav-container {
+  top: 0px;
+  /* position: fixed; */
+  display: flex;
+  justify-content: flex-end;
+  background-color: #00171F;
+}
+
+.hidden {
+  transform: translateY(-100%);
+}
+
+.App {
+  padding-top: 60px;
+}
+
+.nav-items {
+  list-style: none;
+  padding: 10px;
+}
+
+a {
+  display: inline-block;
+  /* color: #0FA3B1; */
+  color: #009FFD;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+a:hover {
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* About */
+.intro {
+  width: 70%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  margin-bottom: 20px;
+}
+
+.about-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+
+/* Home */
+.home-container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.home-container h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.home-container h3 {
+  text-align: center;
+}
+
+.home-container img {
+  margin-bottom: 10px;
+}
+
+.skills-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 360px;
+  height: 250px;
+  background-color: #009FFD;
+  border-radius: 20px;
+  box-shadow: 0px 3px 6px #fff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.skills-container ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  /* gap: 50px; */
+}
+
+.skills-container ul li {
+  text-decoration: none;
+  list-style: none;
+  width: 33.33%;
+  text-align: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: .3s ease;
+}
+
+.skills-container ul li:hover {
+  transform: translateY(2px);
+}
+
+.skills-container h2 {
+  margin-bottom: 30px;
+}
+
+/* Resume */
+.resume-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Contact */
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  margin-top: 100px;
+}
+
+.contact-container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  background-color: #009FFD;
+  border-radius: 20px;
+  box-shadow: 0px 3px 4px #333;
+  width: 300px;
+  height: 200px;
+  box-shadow: 0px 3px 6px #fff;
+}
+
+.contact-container a {
+  color: #080808;
+}
+
+.links-wrapper {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Projects */
+.projects-wrapper {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.projects-header{
+  margin-bottom: 20px;
+}
+
+.website {
+  width: 300px;
+  height: 200px;
+  border-radius: 0px;
+}
