@@ -33,19 +33,19 @@ function App() {
     <div className="App">
       <nav className={`navbar ${isHidden ? 'hidden' : ''}`}>
         <ul className='nav-container'>
-          <li className='nav-items'><Link to='/'>Home</Link></li>
-          <li className='nav-items'><Link to='/about'>About</Link></li>
-          <li className='nav-items'><Link to='/resume'>Resume</Link></li>
-          <li className='nav-items'><Link to='/projects'>Projects</Link></li>
-          <li className='nav-items'><Link to='/contact'>Contact</Link></li>
+          <li className='nav-items'><Link to='/portfolio-website/'>Home</Link></li>
+          <li className='nav-items'><Link to='/portfolio-website/about'>About</Link></li>
+          <li className='nav-items'><Link to='/portfolio-website/resume'>Resume</Link></li>
+          <li className='nav-items'><Link to='/portfolio-website/projects'>Projects</Link></li>
+          <li className='nav-items'><Link to='/portfolio-website/contact'>Contact</Link></li>
         </ul>
       </nav>
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/resume' element={<Resume />} />
-        <Route path='/projects' element={<Projects />} />
-        <Route path='/contact' element={<Contact />} />
+        <Route path='/portfolio-website/' element={<Home />} />
+        <Route path='/portfolio-website/about' element={<About />} />
+        <Route path='/portfolio-website/resume' element={<Resume />} />
+        <Route path='/portfolio-website/projects' element={<Projects />} />
+        <Route path='/portfolio-website/contact' element={<Contact />} />
       </Routes>
     </div>
   );
