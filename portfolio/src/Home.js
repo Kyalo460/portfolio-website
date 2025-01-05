@@ -1,10 +1,35 @@
+import { Typewriter } from "react-simple-typewriter";
+
 export default function Home() {
   return (
     <div className="home-container">
       <h2>Brian Muoki Kyalo</h2>
-      <img src={`${process.env.PUBLIC_URL}/Brian.jfif`} alt="profile" width="20%" />
+      <img
+        src={`${process.env.PUBLIC_URL}/Brian.jfif`}
+        alt="profile"
+        width="20%"
+      />
       <h2>A Software Engineer specializing in Frontend Development</h2>
-      <h3>I build websites using the MERN stack (MongoDB, Express, React, Node)</h3>
+      <h3>
+        I'm a{" "}
+        <span>
+          <Typewriter
+            words={[
+              "Developer",
+              "Designer",
+              "Creator",
+              "Problem Solver",
+              "Critical Thinker",
+            ]}
+            loop={Infinity}
+            cursor
+            cursorStyle="_"
+            typeSpeed={70}
+            deleteSpeed={50}
+            delaySpeed={2000}
+          />
+        </span>
+      </h3>
       <div className="skills-container">
         <h2>Skills:</h2>
         <ul>
@@ -22,5 +47,5 @@ export default function Home() {
         </ul>
       </div>
     </div>
-  )
+  );
 }
